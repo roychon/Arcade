@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Bingo Caller</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+   <a id="bingo-game-btn" href="../index.html">PLAY BINGO</a>
+   <div class="image-container">
+      <img src="./bingo_cage_static.jpg" alt="bingo cage" draggable="false" />
+      <img id="stopped-cage" src="./bingo_cage_ball_static.jpg" alt="bingo cage" draggable="false" />
+      <div class="chosen-ball">
+         <h1>B-88</h1>
+      </div>
+   </div>
+   <div class="numbers-container">
+      <button id="get-num-button" onclick="callNum()">
+         <h2>GET A NUMBER</h2>
+      </button>
+      <div class="called-numbers"></div>
+   </div>
+   <script src="bingo_caller.js"></script>
+</body>
+
+</html>

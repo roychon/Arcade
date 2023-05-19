@@ -1,0 +1,107 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-weight: 300;
+  background: #1abc9c;
+  user-select: none;
+  margin: 0;
+
+  cursor: url("./bingo_stamp.png") 15 69, pointer;
+}
+
+h1,
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20pt;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+}
+
+
+h1.gold {
+  color: gold;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+p a {
+  text-decoration: none;
+  color: #f1c40f;
+}
+
+#squarefree {
+  font-family: Helvetica;
+  margin: 0 auto;
+  background: #7de4fe;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15pt;
+  line-height: 0px;
+}
+
+#bingotable {
+  margin: 0 auto;
+  text-align: center;
+  width: 403px;
+  height: 503px;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  font-family: Helvetica;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid black;
+  width: 20%;
+  position: relative;
+}
+
+td:hover {
+  background-color: rgba(255, 0, 0, 0.08);
+}
+
+td.green,
+#squarefree.green {
+  background-color: #6bbf59;
+}
+
+th {
+  background: #9b59b6;
+}
+
+h1 {
+  line-height: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#bingo-caller-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: black;
+  text-decoration: none;
+  background-color: goldenrod;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-shadow: 0 0 2px 5px black;
+  cursor: pointer;
+}
+
+.img  {
+  background-image: url(./red_stamp.png);
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.green {
+  background-color: green;
+}
