@@ -3,7 +3,7 @@
 // Grab the relevant data and plug it in where it needs to go
 // Add another AJAX request to species endpoint
 
-let pokemonNum = 1;
+let pokemonNum;
 
 const rightBtn = document.querySelector(".controls .right");
 const leftBtn = document.querySelector(".controls .left");
@@ -69,13 +69,15 @@ function getPokemonData(pokemon) {
             }
         }
 
+        // when no description is available in pokedex
+        if (!response.flavor_text_entries.length)
+            description.textContent = "No description in Pokedex";
         for (let data of response.flavor_text_entries) {
             if (data.language.name == "en") {
                 description.textContent = data.flavor_text;
             }
         }
     });
-
     xhr2.send(null);
 }
 
