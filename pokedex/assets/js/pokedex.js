@@ -1,8 +1,4 @@
-// Call our function when user clicks the left or right arrows
-// Call function when the user presses enter in the input
-// Grab the relevant data and plug it in where it needs to go
-// Add another AJAX request to species endpoint
-
+// id of current pokemon
 let pokemonNum;
 
 const rightBtn = document.querySelector(".controls .right");
@@ -20,7 +16,7 @@ leftBtn.addEventListener("click", () => {
 
 nameInput.addEventListener("keypress", (e) => {
     if (e.key == "Enter") {
-        getPokemonData(nameInput.value);
+        getPokemonData(nameInput.value.toLowerCase());
     }
 });
 
